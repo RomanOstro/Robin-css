@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 72px;
+  column-gap: 134px; /*Что бы элементы хедера не слипались при сужении экрана, это минимальная граница с развернутым меню*/
+}
+
+.header-menu-list {
+  display: flex;
+  column-gap: 48px;
+}
+
+.header-menu-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  transition: color 1s  ease;
+}
+
+/* Применяем жирный шрифт к последнему элементу, именно к li и стилизуем его дочерний элемент
+т.к. напрямую к <a class=".header-menu-link"> мы применить last-of-type не можем, из-за того, что ссылка в li одна */
+.header-menu-item:last-of-type .header-menu-link {
+  font-weight: bold;
+}
+
+.header-menu-link:hover {
+  color:#E95D90
+}
+
