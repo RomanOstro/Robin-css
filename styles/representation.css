@@ -1,0 +1,31 @@
+.representation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  padding: 221px 40px 225px 0;
+}
+
+.representation-image {
+  position: absolute;
+  width: 750px;
+  height: 650px;
+  top: 80px;
+  z-index: 0;
+}
+
+.representation-description {
+  align-self: flex-end;
+  max-width: 738px;
+  z-index: 1;
+}
+
+.representation-description-title {
+  font-size: 78px;
+  font-weight: var(--bold);
+  padding-block-end: 32px;
+}
+
+.accent-grey {
+  color: var(--light-grey);
+}

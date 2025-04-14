@@ -13,3 +13,16 @@ body {
 h1,h2,h3,h4, h5 {
   font-weight: bold;
 }
+
+
+.header::after,
+.representation::after {
+  content: '';
+  left: 540px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  background-color: var(--level1);
+  position: absolute;
+  z-index: -1;
+}
