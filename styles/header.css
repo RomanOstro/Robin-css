@@ -3,22 +3,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 72px;
-  column-gap: 134px; /*Что бы элементы хедера не слипались при сужении экрана, это минимальная граница с развернутым меню*/
+  padding-inline: clamp(2.5rem, 0.214rem + 4.76vw, 4.5rem);
   color: var(--text);
-  
+  height: 88px
 }
 
 .header-menu-list {
   display: flex;
-  column-gap: 48px;
+}
+
+.header-menu-item {
+  height: 100%;
+  padding: 35px 24px;
 }
 
 .header-menu-link {
   text-decoration: none;
   font-weight: normal;
   font-size: 16px;
-  transition: color 1s  ease;
+  transition: color 1s ease;
 }
 
 /* Применяем жирный шрифт к последнему элементу, именно к li и стилизуем его дочерний элемент
@@ -28,6 +31,36 @@
 }
 
 .header-menu-link:hover {
-  color:#E95D90
+  color: #3de7fd;
 }
 
+.header-button {
+  display: none;
+  width: 24px;
+  aspect-ratio: 1;
+  background: transparent;
+  border: none;
+}
+
+@media (width <= 768px) {
+  .header {
+    font-size: 16px;
+    padding-inline: clamp(1.25rem, 0.147rem + 4.9vw, 2.5rem);
+  }
+  .header-menu-item:last-of-type {
+    background-color: var(--primary);
+  }
+}
+
+@media (width <= 590px) {
+  .header {
+    height: 72px
+  }
+
+  .header-menu {
+    display: none;
+  }
+  .header-button {
+    display: block;
+  }
+}

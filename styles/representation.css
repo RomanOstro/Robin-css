@@ -3,29 +3,59 @@
   display: flex;
   flex-direction: column;
   color: var(--text);
-  padding: 221px 40px 225px 0;
+  padding-right: 40px;
+  border-block-end: 1px dashed var(--light-grey);
+  border-width: 1px;
+  height: calc(100vh - 88px);
 }
 
 .representation-image {
   position: absolute;
-  width: 750px;
-  height: 650px;
   top: 80px;
   z-index: 0;
 }
 
 .representation-description {
+  padding-top: clamp(10.438rem, 6.58rem + 8.04vw, 13.813rem);
   align-self: flex-end;
   max-width: 738px;
+  width: clamp(25.5rem, 1.071rem + 50.89vw, 46.875rem);
   z-index: 1;
 }
 
 .representation-description-title {
-  font-size: 78px;
+  font-size: clamp(3.5rem, 1.929rem + 3.27vw, 4.875rem);
   font-weight: var(--bold);
   padding-block-end: 32px;
 }
 
 .accent-grey {
   color: var(--light-grey);
+}
+
+
+@media (width <= 760px) {
+  .representation-description-title {
+    font-size: clamp(2rem, 0.676rem + 5.88vw, 3.5rem);
+  }
+  
+}
+
+@media (width <= 590px) {
+  .representation {
+    padding: 0;
+    align-items: center;
+    height: calc(100vh - 72px);
+  }
+  .representation-image {
+    position: static;
+    width: 360px;
+    height: 288px;
+    object-fit: cover;
+  }
+
+  .representation-description {
+    width: 100%;
+    padding: 48px 20px;
+  }
 }

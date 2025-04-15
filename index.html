@@ -10,11 +10,11 @@
 
 <body class="body">
   <!-- {Хэдер} -->
-  <header class="header">
-    <a class="header-logo" href="/">
+  <header class="header container">
+    <a class="header-logo" href="#">
       <img src="/images/logo.svg" alt="логотип" class="header-logo-image" width="79" height="24">
     </a>
-    <nav class="neader-menu">
+    <nav class="header-menu">
       <ul class="header-menu-list">
         <li class="header-menu-item">
           <a class="header-menu-link" href="#">
@@ -38,33 +38,46 @@
         </li>
       </ul>
     </nav>
+    <button type="button" class="header-button">
+      <svg viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="18" height="3" fill="#C4C4C4" />
+        <rect x="5" y="8" width="13" height="3" fill="#C4C4C4" />
+      </svg>
+    </button>
   </header>
-  
-  <!-- Секция  representation-->
-  <section class="representation">
-    <img class="representation-image" src="./images/representation-image.jpg" alt="photo Robin W">
-    <div class="representation-description">
-      <h2 class="representation-description-title">
-        I’m Robin Williams. A Product Designer
-        <span class="accent-grey">
-          based in Italy.
-        </span>
-      </h2>
-      <p class="representation-description-text">
-        I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs
-        some amazing skills, I’m your guy.
-      </p>
-    </div>
 
-  </section>
+  <main class="content container">
+    <!-- Секция  representation-->
+    <section class="representation">
+      <picture>
+        <source media="(max-width:840px)" srcset="./images/header-image-medium.jpg">
+        <source media="media(max-width:360px)" srcset="./images/representation-image.jpg">
+        <img class="representation-image" src="./images/representation-image.jpg" alt="photo Robin W">
+      </picture>
+
+      <div class="representation-description">
+        <h2 class="representation-description-title">
+          I’m Robin Williams. <br> A Product Designer
+          <span class="accent-grey">
+            based in Italy.
+          </span>
+        </h2>
+        <p class="representation-description-text">
+          I’m probably the most passionate designer you will ever get to work with. If you have a great project that
+          needs
+          some amazing skills, I’m your guy.
+        </p>
+      </div>
+
+    </section>
 
 
 
 
 
 
-  <!-- Секция описания опыта -->
-  <!-- <section class="experience">
+    <!-- Секция описания опыта -->
+    <!-- <section class="experience">
 
     <span class="title">work experience</span>
     <h2 class="heading">Companies I have worked
@@ -93,6 +106,7 @@
       </div>
 
   </section> -->
+  </main>
 
 </body>
 
