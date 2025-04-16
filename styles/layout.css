@@ -9,6 +9,7 @@ body {
   max-width: 1440px;
   min-width: 360px;
   margin: 0 auto;
+  width: 100%;
 }
 
 h1,
@@ -19,8 +20,8 @@ h5 {
   font-weight: bold;
 }
 
-.header::after,
-.representation::after {
+.header .container::after,
+.representation .container::after {
   content: "";
   left: min(37.5vw, 540px);
   right: 0px;
@@ -31,10 +32,23 @@ h5 {
   z-index: -1;
 }
 
-
 @media (width <= 768px) {
-  .header::after,
-  .representation::after {
+  .header .container::after,
+  .representation .container::after {
     display: none;
   }
+}
+
+/* Селекторы применяемые к нескольким блокама */
+.section-title {
+  font-size: 16px;
+  color: var(--light-grey);
+  font-weight: var(--bold, 700);
+  text-transform: uppercase;
+  padding-block-end: 8px;
+}
+
+/* Стандартные отступы текстовых блоков на 360px */
+.description-info {
+  padding: 48px 20px;
 }
