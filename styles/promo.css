@@ -1,0 +1,23 @@
+.promo .container {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: flex-start;
+}
+
+.promo-item {
+  min-width: 340px;
+  padding-block: 52px;
+  text-align: center;
+  border: 1px solid var(--level1);
+}
+
+@media (width <= 768px) {
+  .promo .container {
+    overflow-x: auto;
+    flex-wrap: wrap;
+  }
+
+  .promo-item {
+    min-width: 50vw;
+  }
+}
