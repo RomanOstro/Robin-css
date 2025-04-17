@@ -1,0 +1,48 @@
+/* Заголовок и описание секции */
+.section-heading {
+  font-size: var(--heading-main);
+  line-height: 1.2;
+  font-weight: var(--bold);
+}
+
+.section-description {
+  color: var(--light-grey);
+  line-height: 1.5;
+}
+
+/* Заголовок и описание карточки без картинки */
+.card-title {
+  font-size: 24px;
+  font-weight: var(--bold);
+  line-height: 1.5;
+}
+
+.card-description {
+  color: var(--light-grey);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Заголовок и описание карточки с картинкой*/
+
+
+
+
+
+/* Маленький серый заголовок в левом верхнем углу */
+.section-title {
+  font-size: 16px;
+  color: var(--light-grey);
+  font-weight: var(--bold, 700);
+  text-transform: uppercase;
+  padding-block-end: 8px;
+}
+
+
+@media (width <= 768px) {
+  .section-heading {
+    font-size: clamp(2rem, 0.732rem + 5.64vw, 3.438rem);
+  }
+
+}
+

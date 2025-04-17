@@ -5,11 +5,9 @@
   color: var(--text);
 }
 
-.experience-heading {
-  max-width: 690px;
-  font-size: var(--heading-main);
-  line-height: 1.2;
+.experience .section-heading {
   padding-block-end: 40px;
+  max-width: 690px;
 }
 
 .experience-description {
@@ -17,23 +15,14 @@
   column-gap: 78px;
 }
 
+.experience .card-title {
+  padding-block-end: 22px;
+}
+
 .description-item-number {
   font-size: 117px;
   color: var(--light-grey);
   line-height: 1.2;
-}
-
-.description-item-title {
-  font-size: 24px;
-  font-weight: var(--bold);
-  line-height: 1.5;
-  padding-block-end: 24px;
-}
-
-.description-item-text {
-  color: var(--light-grey);
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .accent-green {
@@ -53,12 +42,12 @@
     padding: 80px 8.5vw 80px 40px;
   }
 
-  .experience-heading {
+  .experience .section-heading {
     font-size: clamp(2rem, 0.732rem + 5.64vw, 3.438rem);
   }
 
-  .description-item-title {
-    padding-block-end: clamp(1rem, 0.559rem + 1.96vw, 1.5rem);
+  .experience .card-title {
+    padding-block-end: 24px;
   }
 }
 
@@ -70,5 +59,9 @@
   .experience-description {
     flex-wrap: wrap;
     row-gap: 48px;
+  }
+
+  .experience .card-title {
+    padding-block-end: 16px;
   }
 }

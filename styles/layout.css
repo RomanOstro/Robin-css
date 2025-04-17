@@ -20,6 +20,8 @@ h5 {
   font-weight: bold;
 }
 
+/*Серый фон хедера и representation*/
+
 .header .container::after,
 .representation .container::after {
   content: "";
@@ -39,16 +41,3 @@ h5 {
   }
 }
 
-/* Селекторы применяемые к нескольким блокама */
-.section-title {
-  font-size: 16px;
-  color: var(--light-grey);
-  font-weight: var(--bold, 700);
-  text-transform: uppercase;
-  padding-block-end: 8px;
-}
-
-/* Стандартные отступы текстовых блоков на 360px */
-.description-info {
-  padding: 48px 20px;
-}
