@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 636px;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.card-body {
+  padding: 40px 32px;
+  background-color: var(--level1);
+}
+
+.card-title {
+  color: var(--text);
+  padding-block-end: 13px;
+}

@@ -1,0 +1,28 @@
+.portfolio .container {
+  padding: 120px 72px 153px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 31px; */
+}
+
+.portfolio-header {
+  max-width: 636px;
+  max-height: fit-content;
+}
+
+.portfolio-header .section-heading {
+  color: var(--text);
+}
+
+.portfolio .card-title {
+  padding-block-end: 13px;
+}
+
+.portfolio-button {
+  height: 75px;
+  text-transform: uppercase;
+  align-self: center;
+}

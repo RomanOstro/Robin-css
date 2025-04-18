@@ -10,20 +10,25 @@
   line-height: 1.5;
 }
 
-/* Заголовок и описание карточки без картинки */
+/* Заголовок и описание карточки и колонки */
 .card-title {
   font-size: 24px;
   font-weight: var(--bold);
   line-height: 1.5;
 }
 
-.card-description {
+/* Текст колонок */
+.column-description {
   color: var(--light-grey);
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* Заголовок и описание карточки с картинкой*/
+/*Текст карточки с картинкой*/
+.card-description {
+  line-height: 1.5;
+  color: var(--light-grey);
+}
 
 
 
