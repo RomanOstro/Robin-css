@@ -1,0 +1,24 @@
+.dribbble .container {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 182px;
+  row-gap: 120px;
+}
+
+.dribbble .heading-block-section{
+  max-width: 636px;
+}
+
+@media (width <= 768px) {
+  .dribbble .container {
+    padding: 80px 40px;
+  }
+}
+
+@media (width <= 360px) {
+  .dribbble .container {
+    padding: 64px 20px;
+    row-gap: 64px;
+  }
+
+}

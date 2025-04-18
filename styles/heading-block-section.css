@@ -1,0 +1,22 @@
+
+
+.heading-block-section-title {
+  font-size: var(--heading-main);
+  font-weight: var(--bold);
+  line-height: 1.2;
+  color: var(--text);
+  padding-block-end: 24px;
+}
+
+.section-description {
+  padding-block-end: 40px;
+}
+
+.link-block {
+  display: inline-block;
+}
+
+.heading-block-section .section-link {
+  color: var(--text);
+}
+
