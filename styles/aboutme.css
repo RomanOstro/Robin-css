@@ -1,0 +1,52 @@
+.aboutme .container {
+  padding: 120px 72px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+
+.aboutme .heading-block-section {
+  padding-inline-end: clamp(0rem, -3.429rem + 7.14vw, 3rem);/*паддинги на 780px=0, на 1440px = 48px*/
+}
+
+.aboutme-card-block .card:not(:last-child){
+  padding-block-end: 120px;
+}
+
+.aboutme .card-body {
+  background-color: transparent;
+  border: 1px solid var(--level1);
+}
+.aboutme .card-image {
+  height: 360px;
+}
+.aboutme .card-title {
+  padding-block-end: 64px;
+}
+
+.aboutme .card-body p:first-of-type {
+  padding-block-end: 4px;
+  font-weight: var(--bold);
+}
+
+@media (width <= 768px) {
+  .aboutme .container {
+    padding: 80px 40px;
+  }
+  .aboutme .card-body {
+    padding: 32px;
+  }
+}
+
+@media (width <= 590px) {
+  .aboutme .container {
+    padding: 48px 14px;
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+  }
+
+  .aboutme .heading-block-section {
+    padding-inline: 6px;
+    padding-block-end: 16px;
+  }
+}

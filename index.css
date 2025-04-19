@@ -9,6 +9,7 @@
 @import url(./styles/skillset.css);
 @import url(./styles/promo.css);
 @import url(./styles/portfolio.css);
-@import url(./styles/card.css);
+@import url(./styles/components/card.css);
 @import url(./styles/dribbble.css);
-@import url(./styles/heading-block-section.css);
+@import url(./styles/components/heading-block-section.css);
+@import url(./styles/aboutme.css);
