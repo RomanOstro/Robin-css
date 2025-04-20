@@ -21,7 +21,7 @@
   text-decoration: none;
   font-weight: normal;
   font-size: 16px;
-  transition: color 1s ease;
+  transition: color 0.6s ease;
 }
 
 /* Применяем жирный шрифт к последнему элементу, именно к li и стилизуем его дочерний элемент
@@ -31,7 +31,7 @@
 }
 
 .header-menu-link:hover {
-  color: #3de7fd;
+  color: var(--light-grey);
 }
 
 .header-button {
