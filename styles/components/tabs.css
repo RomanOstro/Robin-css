@@ -1,0 +1,33 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.tabs-block{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.tab-label {
+  padding: 11px 17px;
+  border: 1px solid var(--level1);
+  color: var(--text);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tab-label:has(.tab:checked) {
+  background-color: var(--level1);
+}
+
+
+
