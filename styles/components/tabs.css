@@ -8,7 +8,7 @@
   white-space: nowrap;
 }
 
-.tabs-block{
+.tabs-block {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -28,6 +28,3 @@
 .tab-label:has(.tab:checked) {
   background-color: var(--level1);
 }
-
-
-
