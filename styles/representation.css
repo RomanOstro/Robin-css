@@ -2,8 +2,7 @@
   position: relative;
   display: flex;
   color: var(--text);
-  /* border-block-end: 1px dashed var(--light-grey);
-  border-width: 1px; */
+  border-block-end: 1px dashed var(--light-grey);
 }
 
 .representation-image {

@@ -1,0 +1,29 @@
+.burger-wrapper {
+  /* position: fixed; */
+  top: 88px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-grey);
+  z-index: 999;
+}
+
+/* Анимация кнопки при открытии меню добавить класс open */
+.rect-1,
+.rect-2 {
+  transition: all 0.8s;
+}
+
+.header-button.active .rect-1 {
+  width: 12px !important;
+  transform: rotate(45deg) translate(16%, 39%);
+  transform-origin: center;
+  fill: var(--text);
+}
+
+.header-button.active .rect-2 {
+  width: 12px !important;
+  transform: rotate(-45deg) translate(-13%, -37%);
+  transform-origin: center;
+  fill: var(--text);
+}

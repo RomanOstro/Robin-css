@@ -59,8 +59,62 @@
 
   .header-menu {
     display: none;
+    opacity: 0;
   }
+
   .header-button {
-    display: block;
+    display: flex;
+    padding: 6px 3px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header.open .container {
+    position: fixed;
+    background-color: var(--base);
+    z-index: 999;
+  }
+
+  .header.open + .content .representation {
+    padding-block-start: 72px;
+    /*Паддинг сверху для секции representation равный высоте header, для того что бы не прилипало к верху при открытии бургер меню*/
+  }
+
+  .header.open .header-menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    inset: 72px 0 0 0;
+    z-index: 999;
+    background-color: var(--base);
+    animation: menu-appear 0.6s ease forwards; /*forwards - после завершения, анимация останавливается на последнем ключевом кадре*/
+  }
+
+  .header.open .header-menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header.open .header-menu-item {
+    height: auto;
+    padding-block: 25px;
+  }
+
+  .header.open .header-menu-item:last-of-type {
+    background-color: transparent;
+  }
+
+  .header.open .header-menu-item:last-of-type .header-menu-link {
+    font-weight: 400;
+  }
+}
+
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
